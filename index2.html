@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="estilo2.css">
+</head>
+<body>
+
+    <select id="escolher" onchange="atualizarJustifyContent(escolher)">
+        <option value="">SELECIONAR</option>
+        <option value="center">Center</option>
+        <option value="Flex-Start">Flex-Start</option> 
+        <option value="Space-Between">Space-Between</option>
+        <option value="Space-Around">Space-Around</option>
+    </select>
+
+    <div class="container03">
+        <div class="box box1"> DIV01 </div>
+        <div class="box box2"> DIV02 </div>
+        <div class="box box3"> DIV03 </div>
+        <div class="box box4"> DIV04 </div>
+    </div>
+
+<script>
+        var container03= document.getElementsByClassName("container03")[0];
+    function atualizarJustifyContent(elemento){
+        var valor = elemento.value;
+        container03.style.justifyContent=valor;
+    }
+</script>
+
+<hr>
+    
+    <p>
+        POR PADRÃO A PROPRIEDADE
+        <code>align-itens</code>
+        é valor <code>strech</code>
+    </p>
+
+    <select id="random" onchange="atualizarAlignItems(random)">
+        <option value="">SELECIONAR</option>
+        <option value="center">Center</option>
+        <option value="Flex-Start">Flex-Start</option> 
+        <option value="Flex-End">Flex-End</option> 
+        <option value="baseline">baseline</option>
+        <option value="stretch">stretch</option>
+    </select>
+
+    <div class="containerItem">
+        <div class="box boxIten1"> DIV01 </div>
+        <div class="box boxIten2"> DIV02 </div>
+        <div class="box boxIten3"> DIV03 </div>
+        <div class="box boxIten4"> DIV04 </div>
+    </div>
+
+<script>
+    var containerItem= document.getElementsByClassName("containerItem")[0];
+    function atualizarAlignItems(elemento){
+        var valor = elemento.value;
+        containerItem.style.alignItems=valor;
+    }
+
+</script>
+    
+
+</body>
+</html>

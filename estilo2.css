@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(53, 113, 113);
+    color: lightpink;
+    margin: 10px;
+}
+.container03{
+    display: flex;
+    margin: 0 auto;
+
+}
+.containerItem{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid slateblue;
+    height: 150px;
+}
+code{
+    color: blueviolet;
+}
+.box{
+    border: 3px dashed mediumpurple;
+    padding: 10px;
+    text-align: center;
+}
+.box1{
+    background-color: lightblue;
+}
+.box2{
+    background-color: lightgoldenrodyellow;
+}
+.box3{
+    background-color: lightsalmon;    
+}
+.box4{
+    background-color: lightgreen;    
+}
+.boxIten1{
+    background-color: lightblue;
+}
+.boxIten2{
+    background-color: lightgoldenrodyellow;
+}
+.boxIten3{
+    background-color: lightsalmon;    
+}
+.boxIten4{
+    background-color: lightgreen;    
+}
